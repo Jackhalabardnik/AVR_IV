@@ -1,0 +1,28 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.asm</FILE><LINE>15</LINE></main>
+  <restart><FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.asm</FILE><LINE>24</LINE></restart>
+  <loop><FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.asm</FILE><LINE>26</LINE></loop>
+  <delay><FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.asm</FILE><LINE>37</LINE></delay>
+  <L1><FILE>D:\Aktualne Pliki\Studia\Studia IV semestr\Mikroprocesory\Lab3\93065\Z2\Z2.asm</FILE><LINE>40</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>

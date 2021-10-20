@@ -1,0 +1,33 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>18</LINE></main>
+  <set_mode_1><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>73</LINE></set_mode_1>
+  <change_mode><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>90</LINE></change_mode>
+  <loop><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>42</LINE></loop>
+  <mode_0><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>49</LINE></mode_0>
+  <delay><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>64</LINE></delay>
+  <L1><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>67</LINE></L1>
+  <set_mode><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>103</LINE></set_mode>
+  <end><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>106</LINE></end>
+  <synchronise><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\lab4\93065\Z3\Z3.asm</FILE><LINE>122</LINE></synchronise>
+ </LABELS>
+</ASSEMBLER_INFO>

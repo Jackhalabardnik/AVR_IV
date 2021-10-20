@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.asm</FILE><LINE>15</LINE></main>
+  <restart><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.asm</FILE><LINE>28</LINE></restart>
+  <loop><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.asm</FILE><LINE>30</LINE></loop>
+  <negate><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.asm</FILE><LINE>60</LINE></negate>
+  <delay><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.asm</FILE><LINE>49</LINE></delay>
+  <L1><FILE>C:\Users\Jacek\Documents\Studia_act\Mikroprocesory\Lab3\93065\Z3\Z3.asm</FILE><LINE>52</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>

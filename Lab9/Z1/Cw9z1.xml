@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<HAPSIM>
+   <General>
+      <Build>2005</Build>
+      <Position>
+         <top>378</top>
+         <bottom>711</bottom>
+         <left>536</left>
+         <right>1056</right>
+      </Position>
+      <StayOnTop>1</StayOnTop>
+      <Target>ATmega32</Target>
+   </General>
+   <Views>
+      <LCD>
+         <Name>LCD1</Name>
+         <Position>
+            <top>0</top>
+            <left>0</left>
+         </Position>
+         <DisplayConfig>
+            <columns>16</columns>
+            <rows>2</rows>
+            <bkColor>0xc1fa9d</bkColor>
+            <size>2</size>
+         </DisplayConfig>
+         <PortMapping>
+            <DataPort>
+               <Port>PORTA</Port>
+               <HighNibble>bit 4..7</HighNibble>
+               <LowNibble>N.C.</LowNibble>
+            </DataPort>
+            <EnablePin>
+               <Port>PORTA</Port>
+               <Bit>1</Bit>
+            </EnablePin>
+            <RW_Pin>
+               <WriteOnly>1</WriteOnly>
+               <Port>PORTB</Port>
+               <Bit>2</Bit>
+            </RW_Pin>
+            <RS_Pin>
+               <Port>PORTA</Port>
+               <Bit>0</Bit>
+            </RS_Pin>
+         </PortMapping>
+      </LCD>
+      <Buttons>
+         <Name>Buttons1</Name>
+         <Position>
+            <top>71</top>
+            <left>24</left>
+         </Position>
+         <Config index="0">
+            <Name>CLEAR</Name>
+            <PortPin>
+               <Port>PORTD</Port>
+               <Bit>2</Bit>
+            </PortPin>
+            <Invert>1</Invert>
+         </Config>
+         <Config index="1">
+            <Name>N.C.</Name>
+            <PortPin>
+               <Port>N.C.</Port>
+               <Bit>3</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="2">
+            <Name>N.C.</Name>
+            <PortPin>
+               <Port>N.C.</Port>
+               <Bit>6</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="3">
+            <Name>N.C.</Name>
+            <PortPin>
+               <Port>N.C.</Port>
+               <Bit>7</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <TrinaryGroupEnable index="0">0</TrinaryGroupEnable>
+         <TrinaryGroupEnable index="1">0</TrinaryGroupEnable>
+      </Buttons>
+      <Keypad>
+         <Name>Keypad1</Name>
+         <Position>
+            <top>0</top>
+            <left>205</left>
+         </Position>
+         <PortMapping>
+            <Strobe index="0">
+               <Port>PORTB</Port>
+               <Bit>4</Bit>
+            </Strobe>
+            <Strobe index="1">
+               <Port>PORTB</Port>
+               <Bit>5</Bit>
+            </Strobe>
+            <Strobe index="2">
+               <Port>PORTB</Port>
+               <Bit>6</Bit>
+            </Strobe>
+            <Strobe index="3">
+               <Port>PORTB</Port>
+               <Bit>7</Bit>
+            </Strobe>
+            <Input index="0">
+               <Port>PORTB</Port>
+               <Bit>0</Bit>
+            </Input>
+            <Input index="1">
+               <Port>PORTB</Port>
+               <Bit>1</Bit>
+            </Input>
+            <Input index="2">
+               <Port>PORTB</Port>
+               <Bit>2</Bit>
+            </Input>
+            <Input index="3">
+               <Port>PORTB</Port>
+               <Bit>3</Bit>
+            </Input>
+         </PortMapping>
+         <Buttons>
+            <Button index="0">
+               <Caption>0</Caption>
+               <PCKey>1953067887</PCKey>
+            </Button>
+            <Button index="1">
+               <Caption>4</Caption>
+               <PCKey>538976266</PCKey>
+            </Button>
+            <Button index="2">
+               <Caption>8</Caption>
+               <PCKey>538976288</PCKey>
+            </Button>
+            <Button index="3">
+               <Caption>C</Caption>
+               <PCKey>1009794672</PCKey>
+            </Button>
+            <Button index="4">
+               <Caption>1</Caption>
+               <PCKey>538970686</PCKey>
+            </Button>
+            <Button index="5">
+               <Caption>5</Caption>
+               <PCKey>538976288</PCKey>
+            </Button>
+            <Button index="6">
+               <Caption>9</Caption>
+               <PCKey>1047815781</PCKey>
+            </Button>
+            <Button index="7">
+               <Caption>D</Caption>
+               <PCKey>1717922863</PCKey>
+            </Button>
+            <Button index="8">
+               <Caption>2</Caption>
+               <PCKey>538976288</PCKey>
+            </Button>
+            <Button index="9">
+               <Caption>6</Caption>
+               <PCKey>1867525948</PCKey>
+            </Button>
+            <Button index="10">
+               <Caption>A</Caption>
+               <PCKey>171863663</PCKey>
+            </Button>
+            <Button index="11">
+               <Caption>E</Caption>
+               <PCKey>538976288</PCKey>
+            </Button>
+            <Button index="12">
+               <Caption>3</Caption>
+               <PCKey>1734960750</PCKey>
+            </Button>
+            <Button index="13">
+               <Caption>7</Caption>
+               <PCKey>574453861</PCKey>
+            </Button>
+            <Button index="14">
+               <Caption>B</Caption>
+               <PCKey>538976288</PCKey>
+            </Button>
+            <Button index="15">
+               <Caption>F</Caption>
+               <PCKey>538976288</PCKey>
+            </Button>
+         </Buttons>
+      </Keypad>
+   </Views>
+</HAPSIM>
