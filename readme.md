@@ -171,6 +171,37 @@ bez oczekiwania na koniec okresu czasu przewidzianego dla bieżącego kroku anim
 Użyć jednobitowego parametru, którego wartość zmieniana jest w procedurach obsługi przerwań zewnętrznych (INT0/INT1), a który używany jest w pętli głównej programu 
 do modyfikacji animacji (zmiany trybu). 
 
+<h1>L5</h1>
+
+1)	Do PA.0 dołączona jest dioda LED. Do PD2 dołączony jest przycisk (button). Wciśnięcie powoduje zwarcie PD2 do masy (stan 0). 
+Zwolnienie przycisku pozostawia linię niepodłączoną. Do Port C dołączona jest linijka diod.
+Program działa tak, że:
+a) Na linijce diod LED dołączonej do Port C w pętli nieskończonej trwa animacja: ON|ON|ON|ON|ON|ON|ON|ON| przez 50ms i OFF|OFF|OFF|OFF|OFF|OFF|OFF|OFF| przez 50ms.
+Czas odmierzany za pomocą opóźnienia programowego (biblioteka delay).
+b) wciśnięcie przycisku włącza LED i inicjuje odmierzanie czasu w timerze. LED gaśnie po upływie 0,5 sekundy (każde wciśnięcie w czasie odmierzania czasu
+powoduje przedłużenie włączenia LED o w/w czas). Przed odmierzaniem czasu i po odmierzeniu czasu timer ma być zastopowany. 
+Obsługa linii PA.0 w procedurach obsługi przerwań. Użyj trybu normal
+
+
+2)	Opracować program, który po starcie na wyjściu linii OC1A generuje przebieg, w którym czas trwania 1 wynosi 19ms (faza 1 cyklu), czas trwania 0 wynosi 38ms
+(faza 2 cyklu). Czas odmierza timer. Użyć trybu PWM. Do sterowania linią OC1A nie używać obsługi przerwań. Faza 1 rozpoczyna się z minimalnym opoźnieniem
+w stosunku do startu programu, potrzebnym na wykonanie niebędnych konfiguracji.
+UWAGA! Symulację działania należy przeprowadzić z użyciem symulatora "AVR Simulator 2", bez symulatora HAPSIM (nie współpracuje z AVR Simulator 2).
+Jeżeli szkielet projektu do zadania 2 zawiera inne ustawienia, należy je odpowiednio zmienić.
+Weryfikację działania programu należy wykonać w trybie "auto-step" obserwując stan rejestru PIN portu, w którym znajduje się linia OC1A.
+Dla celów testowania zwiększyć 1024 krotnie częstotliwość zliczaną przez timer. W wersji finalnej programu przywrócić ustawienia wymagane przez zadanie.
+
+
+3)	Podłączenia urządzeń zewnętrznych jak w Zadaniu 1. Dodatkowo do PA.7 dołączona skrajna dolna dioda z linijki, której górna skrajna dioda dołączona jest
+do PA.0. Opracować program, który na PA.0 generuje powtarzalny przebieg, w którym czas trwania 1 wynosi 0,16s, czas trwania 0 początkowo wynosi 0,32s. 
+Czas odmierza timer. Każdorazowe wciśnięcie przycisku dolączonego do PD2 powoduje skrócenie czasu trwania o 0,08s przy czym okres powtarzania przebiegu nie może 
+być krótszy, niż 0,192s. Ponadto, wciśnięcie przycisku powoduje zaświecenie diody dołączonej do PA.7. Po wykonaniu operacji skrócenia czasu trwania 0 (bądź po stwierdzeniu,
+że dalsze skracanie jest nidozwolone) dioda ta jest gaszona.
+Użyć timera 1 i trybu CTC z wartością szczytową w OCR1A. Należy tak skonstruować zmianę w OCR1A (w odpowiedzi na przyciśnięcie klawisza), że wyeliminowana jest szkodliwa 
+możliwość zmniejszenia wartości OCR1A w warunkach, gdy nowa wartość < TCNT1 (bieżącej wartości w liczniku timera). W przeciwnym razie po takiej zmianie
+timer nie zarejestruje przekroczenia wartości zawartej w OCR1A i będzie zliczał aż do 2^16.
+W procedurze main wykonywana jest identyczna animacja, jak w zadaniu 1, że czasy włączenia i wyłaczenia LED mają wynosić po 25ms.
+
 <h1>L7 </h1>
 Poniższe zadania przeznaczone są do samodzielnego wykonania przez Studentów.
 
